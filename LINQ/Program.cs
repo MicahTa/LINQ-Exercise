@@ -7,7 +7,7 @@ namespace LINQ
         static void Main(string[] args)
         {
             List<string> games = new List<string> {"Minecraft", "Tetris", "Doom", "Pacman", "Portal", "Call Of Duty", "Fortnight"};
-            var orderd = games.OrderByDescending(x => x.Length).Reverse();
+            var orderd = games.OrderBy(x => x.Length);
             foreach (string game in orderd) {
                 Console.WriteLine(game);
             }
